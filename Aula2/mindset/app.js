@@ -11,4 +11,4 @@ do {
     }
     cont--;
 }
-while (cont>=0)
+while (cont>=1)

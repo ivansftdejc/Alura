@@ -1,15 +1,14 @@
-var cont = 1;
+var cont = 10;
 do {
     var numAleatorio = parseInt(Math.random() * 1000) + 1;
-    var numDigitado = prompt(`${cont}ª Chance! Digite o número que você pensou`);
+    var numDigitado = prompt(` Você tem ${cont} Tentativas! Digite o número que está pensando!`);
     if (numDigitado == numAleatorio) {
-        alert($`Parabéns, Você Acertou ${numDigitado}=${numAleatorio}`);
+        alert(`Parabéns, Você Acertou ${numDigitado}=${numAleatorio}`);
     } else if (numDigitado > numAleatorio) {
-        alert($`Erro, o ${numDigitado}>${numAleatorio} Tente Novamente`);
-
-    } else {
-        alert(`Erro, o ${numDigitado}<${numAleatorio}, Tente Novamente`);
+        alert(`Erro, você digitou ${numDigitado} e é maior que ${numAleatorio}. Tente Novamente!`);
+    } else if (numDigitado < numAleatorio) {
+        alert(`Erro, você digitou ${numDigitado} e é menor que ${numAleatorio}. Tente Novamente!`);
     }
-    cont++;
+    cont--;
 }
-while (cont <= 10)
+while (cont>=0)

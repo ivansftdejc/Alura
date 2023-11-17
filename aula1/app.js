@@ -38,10 +38,10 @@ switch (operacao) {
         }
         break;
     case '2'://---------Conversor de Km Para Anos Luz---------//
-        function converterDistaciaEmKm(_distanciaEmAnoLuz) {
+        function determinarDistaciaEmKm(_distanciaEmAnoLuz) {
             return (_distanciaEmAnoLuz * (9461000000000)).toFixed(2);
         }
-        function converterDistaciaEmAnoLuz(_distanciaEmKm) {
+        function determinarDistaciaEmAnoLuz(_distanciaEmKm) {
             return (_distanciaEmKm * (1 / 9461000000000)).toFixed(2);
         }
         function tempoAPercorrer(_DistanciaApercorrer) {
@@ -53,15 +53,15 @@ switch (operacao) {
             case '1':
             do {
                 let distaciaEmAnoLuz = prompt('Insira o valor da distância em Anos Luz');
-                let distanciaDeterminada = converterDistaciaEmKm(distaciaEmAnoLuz);
+                let distanciaDeterminada = determinarDistaciaEmKm(distaciaEmAnoLuz);
                 respDistancias = prompt(`${distaciaEmAnoLuz} corresponde a ${distanciaDeterminada}Km\nÉ necessário aproximadamente ${tempoAPercorrer(distanciaDeterminada)}h para viajar de uma estrela para outra com esta disância a velocidade da luz\nDeseja continuar?\n1.Sim\n2.Não`);
             } while (respDistancias == '1')
                 break;
             case '2':
             do {
-                let distaciaEmAnoLuz = prompt('Insira o valor da distância em Anos Luz');
-                let distanciaDeterminada = converterDistaciaEmKm(distaciaEmAnoLuz);
-                respDistancias = prompt(`${distaciaEmAnoLuz} corresponde a ${distanciaDeterminada}Km\nÉ necessário aproximadamente ${tempoAPercorrer(distanciaDeterminada)}h para viajar de uma estrela para outra com esta disância a velocidade da luz\nDeseja continuar?\n1.Sim\n2.Não`);
+                let distaciaEmKm = prompt('Insira o valor da distância em Km');
+                let distanciaDeterminada = determinarDistaciaEmAnoLuz(distaciaEmKm);
+                respDistancias = prompt(`${distaciaEmKm} corresponde a ${distanciaDeterminada}Km\nÉ necessário aproximadamente ${tempoAPercorrer(distanciaDeterminada)}h para viajar de uma estrela para outra com esta disância a velocidade da luz\nDeseja continuar?\n1.Sim\n2.Não`);
             } while (respDistancias == '1')
                 break;
         }

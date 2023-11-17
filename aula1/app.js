@@ -47,21 +47,22 @@ switch (operacao) {
         function tempoAPercorrer(_DistanciaApercorrer) {
             return ((_DistanciaApercorrer / (299792458)) / 3600).toFixed(2);
         }
-        function determinarDistancia() {
-            let respDistancias;
+        let respDistancias;
+        let opcaoDistancias = prompt('1. Anos Luz --> Km\n2. Km --> Anos Luz');
+        switch (opcaoDistancias) {
+            case '1':
             do {
                 let distaciaEmAnoLuz = prompt('Insira o valor da distância em Anos Luz');
                 let distanciaDeterminada = converterDistaciaEmKm(distaciaEmAnoLuz);
                 respDistancias = prompt(`${distaciaEmAnoLuz} corresponde a ${distanciaDeterminada}Km\nÉ necessário aproximadamente ${tempoAPercorrer(distanciaDeterminada)}h para viajar de uma estrela para outra com esta disância a velocidade da luz\nDeseja continuar?\n1.Sim\n2.Não`);
             } while (respDistancias == '1')
-        }
-        let opcaoDistancias = prompt('1. Anos Luz --> Km\n2. Km --> Anos Luz');
-        switch (opcaoDistancias) {
-            case '1':
-                determinarDistancia();
                 break;
             case '2':
-                determinarDistancia();
+            do {
+                let distaciaEmAnoLuz = prompt('Insira o valor da distância em Anos Luz');
+                let distanciaDeterminada = converterDistaciaEmKm(distaciaEmAnoLuz);
+                respDistancias = prompt(`${distaciaEmAnoLuz} corresponde a ${distanciaDeterminada}Km\nÉ necessário aproximadamente ${tempoAPercorrer(distanciaDeterminada)}h para viajar de uma estrela para outra com esta disância a velocidade da luz\nDeseja continuar?\n1.Sim\n2.Não`);
+            } while (respDistancias == '1')
                 break;
         }
         break;

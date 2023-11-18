@@ -11,7 +11,7 @@ switch (operacao) {
             do {
                 let valorEmKz = parseInt(prompt('Insira o valor em Kz que deseja converter em Dolar'));
                 respMoeda = prompt(`${valorEmKz}Kz corresponde a ${converterMoeda(valorEmKz, base)}USD\nDeseja continuar?\n1.Sim\n2.Não`);
-            } while (respMoeda == '1')
+            } while (respMoeda === '1')
         }
         let base;
         let opcaoMoeda = prompt('1. Kz --> USD\n2. USD -->Kz\n3. Kz -->Real\n4. Real -->Kz');
@@ -55,29 +55,33 @@ switch (operacao) {
                     let distaciaEmAnoLuz = parseInt(prompt('Insira o valor da distância em Anos Luz'));
                     let distanciaDeterminada = determinarDistaciaEmKm(distaciaEmAnoLuz);
                     respDistancias = prompt(`${distaciaEmAnoLuz} corresponde a ${distanciaDeterminada}Km\nÉ necessário aproximadamente ${tempoAPercorrer(distanciaDeterminada)}h para viajar de uma estrela para outra com esta disância a velocidade da luz\nDeseja continuar?\n1.Sim\n2.Não`);
-                } while (respDistancias == '1')
+                } while (respDistancias === '1')
                 break;
             case '2':
                 do {
                     let distaciaEmKm = parseInt(prompt('Insira o valor da distância em Km'));
                     let distanciaDeterminada = determinarDistaciaEmAnoLuz(distaciaEmKm);
                     respDistancias = prompt(`${distaciaEmKm} corresponde a ${distanciaDeterminada}Km\nÉ necessário aproximadamente ${tempoAPercorrer(distanciaDeterminada)}h para viajar de uma estrela para outra com esta disância a velocidade da luz\nDeseja continuar?\n1.Sim\n2.Não`);
-                } while (respDistancias == '1')
+                } while (respDistancias === '1')
                 break;
         }
         break;
     case '3'://-----------Conversor de Temperatura-------------
         function determinarGrausPorKelvin(kelvinInserido) {
+            kelvinInserido=parseInt(kelvinInserido);
             return (kelvinInserido - 273.15).toFixed(2);
         }
         function determinarGrausPorFahrenheit(fahrenheitInserido) {
+            fahrenheitInserido=parseInt(fahrenheitInserido);
             return ((fahrenheitInserido - 32) * (5 / 9)).toFixed(2);
         }
         function determinarKelvinPorGrau(grauInserido) {
+            grauInserido=parseInt(grauInserido);
             return (grauInserido + 273.15).toFixed(2);
 
         }
         function determinarFahrenheitPorGrau(grauInserido) {
+            grauInserido=parseInt(grauInserido);
             return (((9 / 5) * grauInserido) + 32).toFixed(2);
         }
         let resp;
@@ -94,42 +98,42 @@ switch (operacao) {
                     let valorGrau = parseInt(prompt('Insira o valor em grau que desejas converter em Kelvin!'));
                     let kelvinDeterminado = determinarKelvinPorGrau(valorGrau);
                     resp = prompt(`${valorGrau}ºc corresponde a ${kelvinDeterminado}K\nDeseja Continuar?\n1.Sim\n2.Não `);
-                } while (resp == 1)
+                } while (resp === 1)
                 break;
             case '2':
                 do {
                     let valorGrau = parseInt(prompt('Insira o valor em grau que desejas converter em Fahrenheit!'));
                     let fahrenheitDeterminado = determinarFahrenheitPorGrau(valorGrau);
                     resp = prompt(`${valorGrau}ºc corresponde a ${fahrenheitDeterminado}Fº\nDeseja Continuar?\n1.Sim\n2.Não `);
-                } while (resp == 1)
+                } while (resp === 1)
                 break;
             case '3':
                 do {
                     let valorKelvin = parseInt(prompt('Insira o valor em Kelvin que desejas converter em graus!'));
                     let grauDeterminado = determinarGrausPorKelvin(valorKelvin);
                     resp = prompt(`${valorKelvin}K corresponde a ${grauDeterminado}ºc\nDeseja Continuar?\n1.Sim\n2.Não `);
-                } while (resp == 1)
+                } while (resp === 1)
                 break;
             case '4':
                 do {
                     let valorKelvin = parseInt(prompt('Insira o valor em Kelvin que desejas converter em Fahrenheit!'));
-                    let farhenheitDeterminado = determinarFahrenheitPorGrau(parseInt(determinarGrausPorKelvin(valorKelvin)));
+                    let farhenheitDeterminado = determinarFahrenheitPorGrau(determinarGrausPorKelvin(valorKelvin));
                     resp = prompt(`${valorKelvin}K corresponde a ${farhenheitDeterminado}Fº\nDeseja Continuar?\n1.Sim\n2.Não `);
-                } while (resp == 1)
+                } while (resp === 1)
                 break;
             case '5':
                 do {
                     let valorFarhenheit = parseInt(prompt('Insira o valor em Farhenheit  que desejas converter em Graus!'));
                     let grauDeterminado = determinarGrausPorFahrenheit(valorFarhenheit);
                     resp = prompt(`${valorFarhenheit}Fº corresponde a ${grauDeterminado}ºc\nDeseja Continuar?\n1.Sim\n2.Não `);
-                } while (resp == 1)
+                } while (resp === 1)
                 break;
             case '6':
                 do {
                     let valorFarhenheit = parseInt(prompt('Insira o valor em Farhenheit que desejas converter em Kelvin!'));
-                    let kelvinDeterminado = determinarKelvinPorGrau(parseInt(determinarGrausPorFahrenheit(valorFarhenheit)));
+                    let kelvinDeterminado = determinarKelvinPorGrau(determinarGrausPorFahrenheit(valorFarhenheit));
                     resp = prompt(`${valorFarhenheit}F corresponde a ${kelvinDeterminado}K\nDeseja Continuar?\n1.Sim\n2.Não `);
-                } while (resp == 1)
+                } while (resp === 1)
         }
 
 }

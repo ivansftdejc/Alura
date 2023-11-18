@@ -51,19 +51,32 @@ switch (operacao) {
         let opcaoDistancias = prompt('1. Anos Luz --> Km\n2. Km --> Anos Luz');
         switch (opcaoDistancias) {
             case '1':
-            do {
-                let distaciaEmAnoLuz = prompt('Insira o valor da distância em Anos Luz');
-                let distanciaDeterminada = determinarDistaciaEmKm(distaciaEmAnoLuz);
-                respDistancias = prompt(`${distaciaEmAnoLuz} corresponde a ${distanciaDeterminada}Km\nÉ necessário aproximadamente ${tempoAPercorrer(distanciaDeterminada)}h para viajar de uma estrela para outra com esta disância a velocidade da luz\nDeseja continuar?\n1.Sim\n2.Não`);
-            } while (respDistancias == '1')
+                do {
+                    let distaciaEmAnoLuz = prompt('Insira o valor da distância em Anos Luz');
+                    let distanciaDeterminada = determinarDistaciaEmKm(distaciaEmAnoLuz);
+                    respDistancias = prompt(`${distaciaEmAnoLuz} corresponde a ${distanciaDeterminada}Km\nÉ necessário aproximadamente ${tempoAPercorrer(distanciaDeterminada)}h para viajar de uma estrela para outra com esta disância a velocidade da luz\nDeseja continuar?\n1.Sim\n2.Não`);
+                } while (respDistancias == '1')
                 break;
             case '2':
-            do {
-                let distaciaEmKm = prompt('Insira o valor da distância em Km');
-                let distanciaDeterminada = determinarDistaciaEmAnoLuz(distaciaEmKm);
-                respDistancias = prompt(`${distaciaEmKm} corresponde a ${distanciaDeterminada}Km\nÉ necessário aproximadamente ${tempoAPercorrer(distanciaDeterminada)}h para viajar de uma estrela para outra com esta disância a velocidade da luz\nDeseja continuar?\n1.Sim\n2.Não`);
-            } while (respDistancias == '1')
+                do {
+                    let distaciaEmKm = prompt('Insira o valor da distância em Km');
+                    let distanciaDeterminada = determinarDistaciaEmAnoLuz(distaciaEmKm);
+                    respDistancias = prompt(`${distaciaEmKm} corresponde a ${distanciaDeterminada}Km\nÉ necessário aproximadamente ${tempoAPercorrer(distanciaDeterminada)}h para viajar de uma estrela para outra com esta disância a velocidade da luz\nDeseja continuar?\n1.Sim\n2.Não`);
+                } while (respDistancias == '1')
                 break;
         }
         break;
+    case '3'://-----------COnversor de Temperatura-------------
+        function determinarGrausPorKelvin(kelvinInserido) {
+            return kelvinInserido - 273.15;
+        }
+        function determinarGrausPorFahrenheit(fahrenheitInserido) {
+            return (fahrenheitInserido - 32) * (5 / 9);
+        }
+        function determinarKelvinPorGrau(grauInserido) {
+            return grauInserido + 273.15;
+        }
+        function determinarFahrenheitPorGrau(grauInserido) {
+            return ((9 / 5) * grauInserido) + 32;
+        }
 }

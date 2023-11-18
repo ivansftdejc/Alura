@@ -113,11 +113,17 @@ switch (operacao) {
             case '4':
                 do {
                     let valorKelvin = parseInt(prompt('Insira o valor em Kelvin que desejas converter em Fahrenheit!'));
-                    let grauDeterminado = determinarFahrenheitPorGrau(determinarGrausPorKelvin(valorKelvin));
-                    resp = prompt(`${valorKelvin}K corresponde a ${grauDeterminado}Fº\nDeseja Continuar?\n1.Sim\n2.Não `);
+                    let farhenheitDeterminado = determinarFahrenheitPorGrau(determinarGrausPorKelvin(valorKelvin));
+                    resp = prompt(`${valorKelvin}K corresponde a ${farhenheitDeterminado}Fº\nDeseja Continuar?\n1.Sim\n2.Não `);
                 } while (resp == 1)
                 break;
-                
+                case '5':
+                do {
+                    let valorFarhenheit = parseInt(prompt('Insira o valor em Farhenheit  que desejas converter em Graus!'));
+                    let grauDeterminado = determinarGrausPorFahrenheit(valorFarhenheit);
+                    resp = prompt(`${valorFarhenheit}Fº corresponde a ${grauDeterminado}ºc\nDeseja Continuar?\n1.Sim\n2.Não `);
+                } while (resp == 1)
+                break;
         }
 
 }

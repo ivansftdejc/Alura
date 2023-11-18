@@ -68,17 +68,17 @@ switch (operacao) {
         break;
     case '3'://-----------Conversor de Temperatura-------------
         function determinarGrausPorKelvin(kelvinInserido) {
-            return kelvinInserido - 273.15;
+            return (kelvinInserido - 273.15).toFixed(2);
         }
         function determinarGrausPorFahrenheit(fahrenheitInserido) {
-            return (fahrenheitInserido - 32) * (5 / 9);
+            return ((fahrenheitInserido - 32) * (5 / 9)).toFixed(2);
         }
         function determinarKelvinPorGrau(grauInserido) {
-            let resultado = grauInserido + 273.15;
-            return resultado;
+            return (grauInserido + 273.15).toFixed(2);
+            
         }
         function determinarFahrenheitPorGrau(grauInserido) {
-            return ((9 / 5) * grauInserido) + 32;
+            return (((9 / 5) * grauInserido) + 32).toFixed(2);
         }
         let resp;
         let opcaoTemperatura = prompt('Seleccione a opção que desejar.' +
@@ -89,10 +89,7 @@ switch (operacao) {
             '\n5.Converter de Fahrenheit para Grau.' +
             '\n6.Converter de Fahrenheit para Kelvin.');
         switch (opcaoTemperatura) {
-
-
             case '1':
-
                 do {
                     let valorGrau = parseInt(prompt('Insira o valor em grau que desejas converter em Kelvin!'));
                     let kelvinDeterminado = determinarKelvinPorGrau(valorGrau);
@@ -113,6 +110,14 @@ switch (operacao) {
                     resp = prompt(`${valorKelvin}K corresponde a ${grauDeterminado}ºc\nDeseja Continuar?\n1.Sim\n2.Não `);
                 } while (resp == 1)
                 break;
+            case '4':
+                do {
+                    let valorKelvin = parseInt(prompt('Insira o valor em Kelvin que desejas converter em Fahrenheit!'));
+                    let grauDeterminado = determinarFahrenheitPorGrau(determinarGrausPorKelvin(valorKelvin));
+                    resp = prompt(`${valorKelvin}K corresponde a ${grauDeterminado}Fº\nDeseja Continuar?\n1.Sim\n2.Não `);
+                } while (resp == 1)
+                break;
+                
         }
 
 }

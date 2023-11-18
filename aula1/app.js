@@ -75,7 +75,7 @@ switch (operacao) {
         }
         function determinarKelvinPorGrau(grauInserido) {
             return (grauInserido + 273.15).toFixed(2);
-            
+
         }
         function determinarFahrenheitPorGrau(grauInserido) {
             return (((9 / 5) * grauInserido) + 32).toFixed(2);
@@ -117,14 +117,14 @@ switch (operacao) {
                     resp = prompt(`${valorKelvin}K corresponde a ${farhenheitDeterminado}Fº\nDeseja Continuar?\n1.Sim\n2.Não `);
                 } while (resp == 1)
                 break;
-                case '5':
+            case '5':
                 do {
                     let valorFarhenheit = parseInt(prompt('Insira o valor em Farhenheit  que desejas converter em Graus!'));
                     let grauDeterminado = determinarGrausPorFahrenheit(valorFarhenheit);
                     resp = prompt(`${valorFarhenheit}Fº corresponde a ${grauDeterminado}ºc\nDeseja Continuar?\n1.Sim\n2.Não `);
                 } while (resp == 1)
                 break;
-                case '6':
+            case '6':
                 do {
                     let valorFarhenheit = parseInt(prompt('Insira o valor em Farhenheit que desejas converter em Kelvin!'));
                     let kelvinDeterminado = determinarKelvinPorGrau(parseInt(determinarGrausPorFahrenheit(valorFarhenheit)));

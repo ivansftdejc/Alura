@@ -66,7 +66,7 @@ switch (operacao) {
                 break;
         }
         break;
-    case '3'://-----------COnversor de Temperatura-------------
+    case '3'://-----------Conversor de Temperatura-------------
         function determinarGrausPorKelvin(kelvinInserido) {
             return kelvinInserido - 273.15;
         }
@@ -79,4 +79,12 @@ switch (operacao) {
         function determinarFahrenheitPorGrau(grauInserido) {
             return ((9 / 5) * grauInserido) + 32;
         }
+        let opcaoTemperatura=prompt('Seleccione a opção que desejar.'+
+        '\n1.Converter de Graus para Kelvin.'+
+        '\n2.Converter de Graus para Fahrenheit.'+
+        '\n3.Converter de Kelvin para Grau.'+
+        '\n4.Converter de Kelvin para Fahrenheit.'+
+        '\n5.Converter de Fahrenheit para Grau.'+
+        '\n6.Converter de Fahrenheit para Kelvin.');
+
 }

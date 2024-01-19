@@ -131,6 +131,7 @@ switch (operacao) {
             case '6':
                 do {
                     let valorFarhenheit = parseInt(prompt('Insira o valor em Farhenheit que desejas converter em Kelvin!'));
+                    console.log();
                     let kelvinDeterminado = determinarKelvinPorGrau(determinarGrausPorFahrenheit(valorFarhenheit));
                     resp = prompt(`${valorFarhenheit}F corresponde a ${kelvinDeterminado}K\nDeseja Continuar?\n1.Sim\n2.Não `);
                 } while (resp === 1)

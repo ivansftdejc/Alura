@@ -1,6 +1,40 @@
 body{
     background-color: #000;
 }
-.sideBar nav a{
-    width: 16px;
+.sidebar_navigation{
+    background-color: rgba(93, 110, 93, 0.2);
+    border-radius: 16px;
+    padding: 10px;
+}
+.sidebar{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    padding: 10px;
+    width: 300px;
+
+}
+.sidebar_navigation .logo{
+    background: #303831;
+    border-radius: 8px;
+    display:flex;
+    padding: 8px;
+
+}
+.logo img{
+    width: 80px;
+}
+.sidebar nav ul{
+    margin: 0px 20px 10px 20px;
+}
+.sidebar .sidebar_navigation div ul li{
+    padding: 10px 10px;
+}
+.sidebar .sidebar_navigation div ul li a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: "DM Sans", sans-serif;
 }

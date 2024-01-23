@@ -1,7 +1,7 @@
 body{
     background-color: #000;
 }
-.sidebar_navigation{
+.sidebar_navigation, .sidebar_biblioteca{
     background-color: rgba(93, 110, 93, 0.2);
     border-radius: 16px;
     padding: 10px;
@@ -13,7 +13,6 @@ body{
     bottom: 0px;
     padding: 10px;
     width: 300px;
-
 }
 .sidebar_navigation .logo{
     background: #303831;
@@ -28,13 +27,20 @@ body{
 .sidebar nav ul{
     margin: 0px 20px 10px 20px;
 }
-.sidebar .sidebar_navigation div ul li{
+.sidebar .sidebar_navigation div ul li,.sidebar .sidebar_biblioteca div ul li{
     padding: 10px 10px;
 }
-.sidebar .sidebar_navigation div ul li a {
+.sidebar .sidebar_navigation div ul li a,.sidebar .sidebar_biblioteca div ul li a {
     color: #b3b3b3;
     text-decoration: none;
     font-weight: 600;
     font-size: 16px;
     font-family: "DM Sans", sans-serif;
+}
+.sidebar_biblioteca{
+    margin-top: 15px;
+}
+#icon_plus {
+    position: relative;
+    left: 84px;
 }

@@ -1,7 +1,7 @@
 body{
     background-color: #000;
 }
-.sidebar_navigation, .sidebar_biblioteca{
+.sidebar_navigation{
     background-color: rgba(93, 110, 93, 0.2);
     border-radius: 16px;
     padding: 10px;
@@ -14,7 +14,7 @@ body{
     padding: 10px;
     width: 300px;
 }
-.sidebar_navigation .logo,.sidebar_biblioteca .criar_playlist{
+.sidebar_navigation .logo{
     background: #303831;
     border-radius: 8px;
     display:flex;
@@ -27,53 +27,13 @@ body{
 .sidebar nav ul{
     margin: 0px 20px 10px 20px;
 }
-.sidebar .sidebar_navigation div ul li,.sidebar .sidebar_biblioteca div ul li{
+.sidebar .sidebar_navigation ul li{
     padding: 10px 10px;
 }
-.text_playlist a {
-    text-decoration: none;
-    color: black;
-    background-color: white;
-    display: block;
-    border-radius: 30px;
-    margin: 10px;
-    padding: 10px;
-}
-.sidebar .sidebar_navigation div ul li a,.sidebar .sidebar_biblioteca div ul li a,.text_playlist {
+.sidebar .sidebar_navigation ul li a {
     color: #b3b3b3;
     text-decoration: none;
     font-weight: 600;
     font-size: 16px;
     font-family: "DM Sans", sans-serif;
 }
-.sidebar_biblioteca{
-    margin-top: 15px;
-}
-#icon_plus {
-    position: relative;
-    left: 84px;
-}
-.sidebar_biblioteca .criar_playlist{
-    margin: 0px -30px;
-    display:block;
-}
-.text_playlist h1{
-    color: white;
-    padding: 10px;
-}
-.text_playlist h2{
-    color: white;
-    padding: 10px;
-    font-size: 10px;
-}
-.sidebar .sidebar_biblioteca div ul li .text_playlist a {
-    text-decoration: none;
-    color: black;
-    background-color: white;
-    display: block;
-    border-radius: 50px;
-    margin: 10px;
-    padding: 10px;
-    width: 100px;
-}
-

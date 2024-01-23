@@ -3,7 +3,7 @@ body{
 }
 .sidebar_navigation{
     background-color: rgba(93, 110, 93, 0.2);
-    border-radius: 16px;
+    border-radius: 10px;
     padding: 10px;
 }
 .sidebar{
@@ -36,4 +36,16 @@ body{
     font-weight: 600;
     font-size: 16px;
     font-family: "DM Sans", sans-serif;
+}
+.sidebar .biblioteca{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    background-color: rgba(93, 110, 93, 0.2);
+    color: #b3b3b3;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0px;
 }

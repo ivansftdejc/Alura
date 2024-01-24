@@ -1,35 +1,43 @@
-body{
+body {
     background-color: #000;
+    display: flex;
+    flex-direction: column;
 }
-.sidebar_navigation{
+
+.sidebar_navigation {
     background-color: rgba(93, 110, 93, 0.2);
     border-radius: 10px;
     padding: 10px;
 }
-.sidebar{
-    position: fixed;
+
+.sidebar {
     top: 0px;
     left: 0px;
     bottom: 0px;
     padding: 10px;
     width: 300px;
 }
-.sidebar_navigation .logo{
+
+.sidebar_navigation .logo {
     background: #303831;
     border-radius: 8px;
-    display:flex;
+    display: flex;
     padding: 8px;
 
 }
-.logo img{
+
+.logo img {
     width: 80px;
 }
-.sidebar nav ul{
+
+.sidebar nav ul {
     margin: 0px 20px 10px 20px;
 }
-.sidebar .sidebar_navigation ul li{
+
+.sidebar .sidebar_navigation ul li {
     padding: 10px 10px;
 }
+
 .sidebar .sidebar_navigation ul li a {
     color: #b3b3b3;
     text-decoration: none;
@@ -37,9 +45,10 @@ body{
     font-size: 16px;
     font-family: "DM Sans", sans-serif;
 }
-.sidebar .biblioteca{
+
+.sidebar .biblioteca {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     flex-direction: column;
     background-color: rgba(93, 110, 93, 0.2);
     color: #b3b3b3;
@@ -49,32 +58,37 @@ body{
     padding: 10px;
     margin: 10px 0px;
 }
+
 .biblioteca .biblioteca__content {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
-.biblioteca .biblioteca__content .biblioteca__button{
+
+.biblioteca .biblioteca__content .biblioteca__button {
     display: flex;
     margin: 20px;
     color: #b3b3b3;
     background-color: transparent;
     font-size: 16px;
-    font-weight: 600;  
+    font-weight: 600;
     font-family: "DM Sans", sans-serif;
-    text-decoration:none;
+    text-decoration: none;
     text-transform: none;
 }
-.biblioteca__button .fa-book{
+
+.biblioteca__button .fa-book {
     font-size: 20px;
     margin-right: 5px;
     font-weight: 300;
     padding-right: 5px;
-    padding-top: 0px;  
+    padding-top: 0px;
 }
-.biblioteca__content .fa-plus{
+
+.biblioteca__content .fa-plus {
     padding-top: 33px;
 }
-.biblioteca__playlist{
+
+.biblioteca__playlist {
     display: flex;
     flex-direction: column;
     background-color: #303831;
@@ -82,56 +96,97 @@ body{
     padding: 15px;
     margin-bottom: 10px;
 }
-.biblioteca__playlist .playlist-text{
+
+.biblioteca__playlist .playlist-text {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
     font-size: 16px;
-    font-weight: 600;  
+    font-weight: 600;
     font-family: "DM Sans", sans-serif;
     color: #fff;
 }
-.biblioteca__playlist .title__playlist{
+
+.biblioteca__playlist .title__playlist {
     font-size: 16px;
     font-weight: 600;
-    margin-bottom: 15px;  
+    margin-bottom: 15px;
 }
-.biblioteca__playlist .subtitle__playlist{
+
+.biblioteca__playlist .subtitle__playlist {
     font-weight: 100;
     font-size: 13px;
     margin-left: 5px;
 }
-.biblioteca__playlist .button__playlist{
+
+.biblioteca__playlist .button__playlist {
     background-color: #fff;
-    border-radius:30px;
+    border-radius: 30px;
     width: 100px;
     padding: 10px;
     font-size: 11px;
-    font-weight:700;
+    font-weight: 700;
 }
-.biblioteca .button_cookies{
+
+.biblioteca .button_cookies {
     margin: 10px 0px;
 }
-.biblioteca .button_cookies a{
+
+.biblioteca .button_cookies a {
     text-decoration: none;
     font-size: 13px;
     font-weight: 600;
     font-family: "DM Sans", sans-serif;
     color: #b3b3b3;
 }
-.biblioteca .button_cookies a:hover{
+
+.biblioteca .button_cookies a:hover {
     text-decoration: underline;
 }
-.biblioteca .language{
+
+.biblioteca .language {
     margin: 10px 0px;
 }
-.biblioteca .language .button__language{
+
+.biblioteca .language .button__language {
     background-color: transparent;
-    color:#fff;
+    color: #fff;
     padding: 5px 10px;
     border: 1px solid #fff;
     border-radius: 25px;
     font-size: 15px;
 }
 
+.rodape__footer {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, #db05c9, #09c3f1);
+    padding: 15px 20px;
+    margin: 5px 10px;
+    border-radius: 10px;
+}
 
+.text__footer {
+    font-family: "DM Sans", sans-serif;
+    color: #fff;
+}
+
+.text__footer .titulo {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.text__footer .texto {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.rodape__footer .inscrever-se__button {
+    background-color: #fff;
+    border-radius: 30px;
+    font-weight: 600;
+    padding: 0px 30px;
+    margin-right: 50px;
+}

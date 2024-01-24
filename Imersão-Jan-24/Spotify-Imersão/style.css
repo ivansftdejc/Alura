@@ -122,5 +122,16 @@ body{
 .biblioteca .button_cookies a:hover{
     text-decoration: underline;
 }
+.biblioteca .language{
+    margin: 10px 0px;
+}
+.biblioteca .language .button__language{
+    background-color: transparent;
+    color:#fff;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    font-size: 15px;
+}
 
 

@@ -49,3 +49,31 @@ body{
     padding: 10px;
     margin: 10px 0px;
 }
+.biblioteca .biblioteca__content {
+    display: flex;
+    justify-content: space-between; 
+}
+.biblioteca .biblioteca__content .biblioteca__button{
+    display: flex;
+    margin: 10px;
+    color: #b3b3b3;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 600;  
+    font-family: "DM Sans", sans-serif;
+    text-align: center;
+    text-decoration:none;
+    text-transform: none;
+    padding: 20px 10px;
+}
+.biblioteca__button .fa-book{
+    font-size: 20px;
+    margin-right: 5px;
+    font-weight: 300;
+    padding-right: 5px;
+    padding-top: 0px;  
+}
+.biblioteca__content .fa-plus{
+    padding-top: 33px;
+}
+

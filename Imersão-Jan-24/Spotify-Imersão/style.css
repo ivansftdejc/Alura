@@ -119,6 +119,8 @@ body{
     font-family: "DM Sans", sans-serif;
     color: #b3b3b3;
 }
-
+.biblioteca .button_cookies a:hover{
+    text-decoration: underline;
+}
 
 

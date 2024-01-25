@@ -1,15 +1,11 @@
 body {
-    background-color: #000;
+    background-color: var(--fundo_primario);
+    font-family:var(--fonte_principal);
+    color:var(--text_color_principal);
     display: flex;
     flex-direction: column;
-}
-
-.sidebar_navigation {
-    background-color: rgba(93, 110, 93, 0.2);
-    border-radius: 10px;
     padding: 10px;
 }
-
 .sidebar {
     top: 0px;
     left: 0px;
@@ -17,17 +13,23 @@ body {
     padding: 10px;
     width: 300px;
 }
+.sidebar .sidebar_navigation {
+    background-color:var(--fundo_secundario);
+    border-radius: 10px;
+    padding: 10px;
+}
+
 
 .sidebar_navigation .logo {
-    background: #303831;
+    background: var(--fundo_terciario);
     border-radius: 8px;
     display: flex;
-    padding: 8px;
+    padding: 10px;
 
 }
 
 .logo img {
-    width: 80px;
+    width: 100px;
 }
 
 .sidebar nav ul {
@@ -35,23 +37,21 @@ body {
 }
 
 .sidebar .sidebar_navigation ul li {
-    padding: 10px 10px;
+    padding: 10px 0px;
 }
 
 .sidebar .sidebar_navigation ul li a {
-    color: #b3b3b3;
+    color: var(--text_color_principal);
     text-decoration: none;
     font-weight: 600;
-    font-size: 16px;
-    font-family: "DM Sans", sans-serif;
+    font-size: 16px;   
 }
 
 .sidebar .biblioteca {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    background-color: rgba(93, 110, 93, 0.2);
-    color: #b3b3b3;
+    background-color: var(--fundo_secundario);
     font-weight: 600;
     font-size: 16px;
     border-radius: 10px;
@@ -66,22 +66,18 @@ body {
 
 .biblioteca .biblioteca__content .biblioteca__button {
     display: flex;
-    margin: 20px;
-    color: #b3b3b3;
     background-color: transparent;
+    color: var(--text_color_principal);
     font-size: 16px;
     font-weight: 600;
-    font-family: "DM Sans", sans-serif;
     text-decoration: none;
     text-transform: none;
 }
 
 .biblioteca__button .fa-book {
     font-size: 20px;
-    margin-right: 5px;
+    margin-right: 10px;
     font-weight: 300;
-    padding-right: 5px;
-    padding-top: 0px;
 }
 
 .biblioteca__content .fa-plus {
@@ -91,10 +87,9 @@ body {
 .biblioteca__playlist {
     display: flex;
     flex-direction: column;
-    background-color: #303831;
+    background-color:var(--fundo_terciario);
     border-radius: 10px;
-    padding: 15px;
-    margin-bottom: 10px;
+    padding: 10px;
 }
 
 .biblioteca__playlist .playlist-text {
@@ -103,24 +98,24 @@ body {
     margin-bottom: 10px;
     font-size: 16px;
     font-weight: 600;
-    font-family: "DM Sans", sans-serif;
-    color: #fff;
+    color:var(--text_color_secundario);
 }
 
 .biblioteca__playlist .title__playlist {
     font-size: 16px;
     font-weight: 600;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    margin-left: 5px;
 }
 
 .biblioteca__playlist .subtitle__playlist {
     font-weight: 100;
     font-size: 13px;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 .biblioteca__playlist .button__playlist {
-    background-color: #fff;
+    background-color:var(--btn_color);
     border-radius: 30px;
     width: 100px;
     padding: 10px;
@@ -129,15 +124,14 @@ body {
 }
 
 .biblioteca .button_cookies {
-    margin: 10px 0px;
+    margin: 15px 0px 15px 15px;
 }
 
 .biblioteca .button_cookies a {
+    color: var(--text_color_secundario);
     text-decoration: none;
     font-size: 13px;
     font-weight: 600;
-    font-family: "DM Sans", sans-serif;
-    color: #b3b3b3;
 }
 
 .biblioteca .button_cookies a:hover {
@@ -150,9 +144,9 @@ body {
 
 .biblioteca .language .button__language {
     background-color: transparent;
-    color: #fff;
+    color: var(--text_color_secundario);
     padding: 5px 10px;
-    border: 1px solid #fff;
+    border: 1px solid var(--btn_border_color);
     border-radius: 25px;
     font-size: 15px;
 }
@@ -167,24 +161,24 @@ body {
 }
 
 .text__footer {
-    font-family: "DM Sans", sans-serif;
-    color: #fff;
 }
 
 .text__footer .titulo {
     text-transform: uppercase;
     margin-bottom: 10px;
+    color: var(--text_color_secundario);
     font-weight: 600;
     font-size: 16px;
 }
 
 .text__footer .texto {
+    color: var(--text_color_secundario);
     font-size: 13px;
     margin-bottom: 10px;
 }
 
 .rodape__footer .inscrever-se__button {
-    background-color: #fff;
+    background-color: var(--btn_color);
     border-radius: 30px;
     font-weight: 600;
     padding: 0px 30px;

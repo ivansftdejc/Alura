@@ -1,0 +1,17 @@
+:root{
+ /*------------------------Fonte------------------------*/
+    --fonte_principal:"DM Sans", sans-serif;
+
+/*------------------------Cores------------------------*/
+/*Cor do fundo*/
+    --fundo_primario:#000;
+    --fundo_secundario:rgba(93, 110, 93, 0.2);
+    --fundo_terciario:#303831;
+/*Cor do Texto*/
+    --text_color_principal:#b3b3b3;
+    --text_color_secundario:white;
+/*Cor do Botão*/
+    --btn_color:white;
+    --btn_border_color:white;
+
+}

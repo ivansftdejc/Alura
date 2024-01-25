@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./src/style/vars.css">
     <link rel="stylesheet" href="./src/style/sidebar-footer__Style.css">
+    <link rel="stylesheet" href="./src/style/main_Style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
         integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
         integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
 
 </head>
+
 <body>
     <div class="sidebar">
         <nav class="sidebar_navigation">
@@ -63,16 +65,37 @@
             </div>
         </div>
     </div>
-    <main>        
+    <main>
+        <div class="main_container">
+            <nav class="nav_content">
+                <div class="navigation_elements">
+                    <button>
+                        <img src="./src/assets/small-left.png" alt="arrow_left">
+                    </button>
+                    <button>
+                        <img src="./src/assets/small-right.png" alt="arrow_right">
+                    </button>
+                    <div class="search_elements">
+                        <img src="./src/assets/search.png" alt="">
+                        <input id="search_input" type="text" maxlength="800"
+                            placeholder="Pesquise a música que deseja ouvir (*_*)">
+                    </div>
+                    <div class="login_element">
+                        <button class="btn_inscrever-se">Inscrever-se</button>
+                        <button class="btn_entrar">Entrar</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </main>
     <footer class="rodape__footer">
         <div class="text__footer">
             <h1 class="titulo">Testar o Premium de graça</h1>
-            <p class="texto">Inscreva-se para ouvir música ilimitada e podecast só com alguns anúcios. Não precisas de cartão de crédito.</p>
+            <p class="texto">Inscreva-se para ouvir música ilimitada e podecast só com alguns anúcios. Não precisas de
+                cartão de crédito.</p>
         </div>
         <button class="inscrever-se__button">Inscreva-se grátis</button>
     </footer>
-
 </body>
 
 </html>

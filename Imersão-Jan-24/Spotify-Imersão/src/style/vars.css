@@ -7,11 +7,14 @@
     --fundo_primario:#000;
     --fundo_secundario:rgba(93, 110, 93, 0.2);
     --fundo_terciario:#303831;
+    --fundo_icon_arrow:var(--fundo_secundario);
 /*Cor do Texto*/
     --text_color_principal:#b3b3b3;
-    --text_color_secundario:white;
+    --text_color_secundario:rgb(255, 255, 255);
 /*Cor do Botão*/
     --btn_color:white;
     --btn_border_color:white;
+    /*Cor do icon*/
+    --color_icon_arrow:#131313;
 
 }

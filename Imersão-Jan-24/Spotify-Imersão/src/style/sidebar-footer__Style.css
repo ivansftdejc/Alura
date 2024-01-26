@@ -2,11 +2,10 @@ body {
     background-color: var(--fundo_primario);
     font-family:var(--fonte_principal);
     color:var(--text_color_principal);
-    display: flex;
-    flex-direction: column;
     padding: 10px;
 }
 .sidebar {
+    position: fixed;
     top: 0px;
     left: 0px;
     bottom: 0px;
@@ -62,6 +61,7 @@ body {
 .biblioteca .biblioteca__content {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 15px;
 }
 
 .biblioteca .biblioteca__content .biblioteca__button {
@@ -81,7 +81,7 @@ body {
 }
 
 .biblioteca__content .fa-plus {
-    padding-top: 33px;
+    padding-top: 5px;
 }
 
 .biblioteca__playlist {
@@ -152,6 +152,9 @@ body {
 }
 
 .rodape__footer {
+    position: fixed;
+    top: 550px;
+    width: 94vw;
     display: flex;
     justify-content: space-between;
     background: linear-gradient(to right, #db05c9, #09c3f1);
@@ -182,5 +185,6 @@ body {
     border-radius: 30px;
     font-weight: 600;
     padding: 0px 30px;
-    margin-right: 50px;
+    margin-right: 5px;
+    margin-left: 50px;
 }

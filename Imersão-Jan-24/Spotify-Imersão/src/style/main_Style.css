@@ -1,4 +1,6 @@
 .main_container{
+    display: flex;
+    flex-direction: column;
     max-width: 75vw;
     height: 80vh;
     margin-left: 330px;
@@ -6,6 +8,7 @@
     border-radius: 15px;
 }
 .header_navigation{
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -80,4 +83,10 @@
     color: black;
     padding: 10px 15px;
     border-radius: 19px;
+}   
+.playlist_main_container{
+    display: block;
+    position: relative;
+    top: 100px;
+
 }
